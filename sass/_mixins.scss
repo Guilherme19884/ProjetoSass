@@ -27,3 +27,19 @@
       url("../img/#{$img}");
   }
 }
+
+@mixin mobile {
+  @media (max-width: 425px) {
+    @content();
+  }
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  span {
+    font-weight: bold;
+    color: variable.$secundary-color;
+  }
+}
